@@ -26,3 +26,4 @@ Até 16 de Out.:
   - Preparar as imagens/PDF e os .fst de cada parte do código
   - Preparar testes de input (??)
   - Preparar o relatório
+  - Corrigir run.sh e testar tudo
