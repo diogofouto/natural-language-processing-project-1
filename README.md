@@ -6,13 +6,13 @@ Repo para o projeto 1 de LN
 Até 9 de Out.:
   - Fazer todo o código para a alínea 1:
       - a: Done
-      - b:
+      - b: Done
       - c:
-      - d:
+      - d: Done (ish?)
       - e: Done
-      - f:
+      - f: Done
       - g: Done
-      - h:
+      - h: Done
   - Preparar as imagens/PDF e os .fst de cada parte do código
   - Preparar testes de input (??) 
 
