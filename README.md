@@ -13,8 +13,9 @@ Até 9 de Out.:
       - f: Done
       - g: Done
       - h: Done
-  - Preparar as imagens/PDF e os .fst de cada parte do código
-  - Preparar testes de input (??) 
+  - Preparar as imagens/PDF e os .fst: Done
+  - Preparar testes de input: Done alguns
+  - Corrigir run.sh: Done
 
 Até 16 de Out.:
   - Fazer todo o código para a alínea 2:
@@ -23,7 +24,6 @@ Até 16 de Out.:
       - k:
       - l:
       - m:
-  - Preparar as imagens/PDF e os .fst de cada parte do código
-  - Preparar testes de input (??)
-  - Preparar o relatório
-  - Corrigir run.sh e testar tudo
+  - Preparar as imagens/PDF e os .fst:
+  - Preparar testes de input:
+  - Preparar o relatório:
