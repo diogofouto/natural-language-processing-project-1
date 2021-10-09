@@ -1,0 +1,16 @@
+Group 3
+Alexandre Pires nº92414
+Diogo Fouto nº 93705
+
+Options taken:
+
+d2dd and d2dddd: Made using Epsilon-transitions to add just enough 0s for a number to be able to reach 4 digits, any less than that and it wouldn't be enough digits to reach the final stage. 
+
+A2R: Made from an inverted FST R2A, since we wanted to invert inputs from R2A to outputs, and vice-versa.
+
+
+Estimated work distribution:
+
+Alexandre Pires: 50%, Diogo Fouto: 50%
+
+The reasoning behind this is that the entire workload was distributed fairly. Exercices 1 were divided 50%/50%, exercices 2 got divided 3 to Alexandre, and 2 to Diogo, but Diogo made more contribuitions to the tests, being responsible for exercice 3, and shell script. Both worked on tests for exercices 1.
