@@ -8,6 +8,8 @@ d2dd and d2dddd: Made using Epsilon-transitions to add just enough 0s for a numb
 
 A2R: Made from an inverted FST R2A, since we wanted to invert inputs from R2A to outputs, and vice-versa.
 
+birthA2T: Based on concatenations of FSTs: 3x copy (dd/) -> mm2mmm -> 5x copy (/aaaa) 
+
 
 Estimated work distribution:
 
