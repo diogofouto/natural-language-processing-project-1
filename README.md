@@ -19,11 +19,11 @@ Até 9 de Out.:
 
 Até 16 de Out.:
   - Fazer todo o código para a alínea 2:
-      - i:
-      - j:
-      - k:
-      - l:
-      - m:
-  - Preparar as imagens/PDF e os .fst:
-  - Preparar testes de input:
-  - Preparar o relatório:
+      - i: Done
+      - j: Done
+      - k: Done
+      - l: Done
+      - m: Done
+  - Preparar as imagens/PDF e os .fst: Done
+  - Preparar testes de input: 50%
+  - Preparar o relatório: 50%
