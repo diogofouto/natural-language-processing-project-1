@@ -10,7 +10,11 @@ A2R: Made from an inverted FST R2A, since we wanted to invert inputs from R2A to
 
 birthA2T: Based on concatenations of FSTs: 3x copy (dd/) -> mm2mmm -> 5x copy (/aaaa) 
 
-birthR2A: First an FST is made from composing R2A with d2dd, which allows us to get a two digit number from a roman numeral, lets call this "ddconv". This "ddconv" is concatenated with "copy" on the right, in order to extract the following "/" on a date, lets call this "ddconv2". Since we got both 2 digits for days and months, each followed by a "/", we can concatenate ddconv2 with another ddconv2 to handle everything from "dd/mm/", doing "ddmmconv". The year is extracted by composing R2A with d2dddd, to do a "aaaaconv". Finally, we concatenate ddmmconv with aaaaconv and get birthR2A.  
+birthR2A: First an FST is made from composing R2A with d2dd, which allows us to get a two digit number from a roman numeral, lets call this "ddconv". This "ddconv" is concatenated with "copy" on the right, in order to extract the following "/" on a date, lets call this "ddconv2". Since we got both 2 digits for days and months, each followed by a "/", we can concatenate ddconv2 with another ddconv2 to handle everything from "dd/mm/", doing "ddmmconv". The year is extracted by composing R2A with d2dddd, to do a "aaaaconv". Finally, we concatenate ddmmconv with aaaaconv and get birthR2A.
+
+birthT2R: TODO
+
+birthR2L: This can be made by simply composing birthR2A with date2year, in order to get the year written in arabic numerals, the result of which is then composed with leap to produce the desired result.   
 
 Estimated work distribution:
 
