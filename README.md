@@ -7,14 +7,14 @@ Até 9 de Out.:
   - Fazer todo o código para a alínea 1:
       - a: Done
       - b: Done
-      - c:
-      - d: Done (ish?)
+      - c: Done
+      - d: Done
       - e: Done
       - f: Done
       - g: Done
       - h: Done
   - Preparar as imagens/PDF e os .fst: Done
-  - Preparar testes de input: Done alguns
+  - Preparar testes de input: Done
   - Corrigir run.sh: Done
 
 Até 16 de Out.:
@@ -26,4 +26,4 @@ Até 16 de Out.:
       - m: Done
   - Preparar as imagens/PDF e os .fst: Done
   - Preparar testes de input: 50%
-  - Preparar o relatório: 50%
+  - Preparar o relatório: Done
