@@ -17,7 +17,7 @@ echo "COMPILATION SUCCESSFUL"; echo
 ## birthR2A
 fstcompose compiled/R2A.fst compiled/d2dd.fst > compiled/temp1.fst
 fstconcat compiled/temp1.fst compiled/copy.fst > compiled/temp2.fst
-fstconcat compiledtemp2.fst compiled/temp2.fst > compiled/temp3.fst
+fstconcat compiled/temp2.fst compiled/temp2.fst > compiled/temp3.fst
 fstcompose compiled/R2A.fst compiled/d2dddd.fst > compiled/temp4.fst
 fstconcat compiled/temp3.fst compiled/temp4.fst > compiled/birthR2A.fst
 
@@ -31,7 +31,7 @@ fstconcat compiled/temp3.fst compiled/temp4.fst > compiled/birthA2T.fst
 ## birthT2R
 fstinvert compiled/birthA2T.fst > compiled/temp1.fst
 fstinvert compiled/birthR2A.fst > compiled/temp2.fst
-fstcompose compiled/temp1.fst compiled/temp2.fst > birthT2R.fst
+fstcompose compiled/temp1.fst compiled/temp2.fst > compiled/birthT2R.fst
 
 ## birthR2L
 fstcompose compiled/birthR2A.fst compiled/date2year.fst > compiled/temp1.fst
@@ -47,17 +47,17 @@ for i in tests/*.txt; do
 	# To get the "R", "T", or "A" that symbols what notation the number is in
 	notation="${testFile: -1}"
 	# Delete that symbol from the number
-	studentId=${testFile::-1}
+	studentId="${testFile%?}"
 
-	for j in compiled/birth"$notation"*.fst; do
+	for j in compiled/birth$notation??.fst; do
 		fst="$(basename $j '.fst')"
 
-		echo "Testing the transducer '$fst' with the input '$testFile' (generating pdf)"
-		fstcompose compiled/"$testFile".fst $j | fstshortestpath > compiled/"${studentId}${fst}".fst
+		echo "Testing the transducer $fst with the input $testFile (generating pdf)"
+		fstcompose compiled/$testFile.fst $j | fstshortestpath > compiled/$studentId$fst.fst
 		echo "PDF Generation Successful"; echo
 
-		echo "Testing the transducer '$fst' with the input '$testFile' (stdout):"
-		fstcompose compiled/"$testFile".fst $j | fstshortestpath | fstproject --project_type=output | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=./syms.txt
+		echo "Testing the transducer $fst with the input $testFile (stdout):"
+		fstcompose compiled/$testFile.fst $j | fstshortestpath | fstproject --project_type=output | fstrmepsilon | fsttopsort | fstprint --acceptor --isymbols=./syms.txt
 		echo
 	done
 done
