@@ -12,12 +12,6 @@ for i in sources/*.txt tests/*.txt; do
 done
 echo "COMPILATION SUCCESSFUL"; echo
 
-for i in tests/*.txt; do
-	echo "Compiling: $i"
-    fstcompile --isymbols=syms.txt --osymbols=syms.txt $i | fstarcsort > compiled/$(basename $i ".txt").fst
-done
-echo "COMPILATION SUCCESSFUL"; echo
-
 
 # SECTION 2 TRANSDUCERS CREATION
 ## birthR2A
