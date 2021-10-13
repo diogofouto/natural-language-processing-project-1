@@ -14,6 +14,9 @@ echo "COMPILATION SUCCESSFUL"; echo
 
 
 # SECTION 2 TRANSDUCERS CREATION
+## A2R
+fstinvert compiled/R2A.fst > compiled/A2R.fst
+
 ## birthR2A
 fstcompose compiled/R2A.fst compiled/d2dd.fst > compiled/temp1.fst
 fstconcat compiled/temp1.fst compiled/copy.fst > compiled/temp2.fst
@@ -21,7 +24,7 @@ fstconcat compiled/temp2.fst compiled/temp2.fst > compiled/temp3.fst
 fstcompose compiled/R2A.fst compiled/d2dddd.fst > compiled/temp4.fst
 fstconcat compiled/temp3.fst compiled/temp4.fst > compiled/birthR2A.fst
 
-## birthR2A
+## birthA2T
 fstconcat compiled/copy.fst compiled/copy.fst > compiled/temp1.fst
 fstconcat compiled/temp1.fst compiled/copy.fst > compiled/temp2.fst
 fstconcat compiled/temp2.fst compiled/mm2mmm.fst > compiled/temp3.fst
