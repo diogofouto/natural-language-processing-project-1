@@ -1,4 +1,0 @@
-0	1	eps	eps
-1	2	eps	eps
-2	3	eps	eps
-3
