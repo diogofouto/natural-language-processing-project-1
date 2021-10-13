@@ -25,5 +25,5 @@ Até 16 de Out.:
       - l: Done
       - m: Done
   - Preparar as imagens/PDF e os .fst: Done
-  - Preparar testes de input: 50%
+  - Preparar testes de input: Done
   - Preparar o relatório: Done
