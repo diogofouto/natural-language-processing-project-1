@@ -10,7 +10,7 @@ for i in sources/*.txt tests/*.txt; do
 	echo "Compiling: $i"
     fstcompile --isymbols=syms.txt --osymbols=syms.txt $i | fstarcsort > compiled/$(basename $i ".txt").fst
 done
-echo "COMPILATION SUCCESSFUL"; echo
+echo "COMPILATION COMPLETE"; echo
 
 
 # SECTION 2 TRANSDUCERS CREATION
@@ -64,7 +64,7 @@ for i in tests/*.txt; do
 		echo
 	done
 done
-echo "TESTING SUCCESSFUL"; echo
+echo "TESTING COMPLETE"; echo
 
 
 # IMAGE GENERATION
@@ -72,10 +72,10 @@ for i in compiled/*.fst; do
 	echo "Creating image: images/$(basename $i '.fst').pdf"
     fstdraw --portrait --isymbols=syms.txt --osymbols=syms.txt $i | dot -Tpdf > images/$(basename $i '.fst').pdf
 done
-echo "IMAGE GENERATION SUCCESSFUL"; echo
+echo "IMAGE GENERATION COMPLETE"; echo
 
 
 # SUCCESS STATUS
-echo "UTTER AND COMPLETE SUCCESS!!"
+echo "SCRIPT COMPLETE"
 
 
